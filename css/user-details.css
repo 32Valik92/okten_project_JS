@@ -1,0 +1,100 @@
+body {
+    background: #1f2124;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    color: #D6D6D6;
+    text-align: center;
+}
+
+/* Стилізація списку з інформацією про користувача */
+.divUserList {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.divUserList ul {
+    padding-left: 25px;
+    background: #1b9aaa;
+    color: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.divUserList li {
+    margin: 5px;
+    padding: 1px 2px;
+}
+
+.divUserList li:hover {
+    transition: background-color 0.3s ease-out;
+    background: #105058;
+    border-radius: 4px;
+}
+
+/* Стилізація кнопки, яка показує пости користувача */
+.divForButton {
+    display: flex;
+    justify-content: center;
+}
+
+.divForButton button {
+    width: 90%;
+    padding: 10px 20px;
+    background-color: #1b9aaa;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease-out;
+}
+
+.divForButton:hover button {
+    background-color: #105058;
+}
+
+/* Стилізація виведених постів */
+.divPosts {
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.divPost {
+    width: 17%;
+    margin: 5px;
+    background: #D356BA;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPost button {
+    padding: 5px 10px;
+    background-color: #6A005F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease-out;
+}
+
+.divPost:hover {
+    transition: background-color 0.3s ease-out;
+    background: #6A005F;
+}
+
+.divPost:hover button {
+    background-color: #D356BA;
+}
