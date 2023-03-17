@@ -2,7 +2,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then(users => users.json())
     .then(users => {
         users.forEach((user, index) => {
-            let divUser = document.getElementById(`user${index + 1}`),
+            let divUser = document.querySelector(`#user${index + 1}`),
                 h3 = document.createElement('h3'),
                 button = document.createElement('button');
 

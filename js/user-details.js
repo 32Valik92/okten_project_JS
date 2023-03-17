@@ -32,22 +32,22 @@ let postsInfo = fetch(`https://jsonplaceholder.typicode.com/users/${userId}/post
 Promise.all([userInfo, postsInfo]).then(info => {
     let [user, posts] = info; // Деструктуризація на окремі змінні
 
-    renderInfo(user, document.getElementsByClassName('divUserList')[0]); // викликаємо функцію, яка формує список з детальною інформацією користувача
+    renderInfo(user, document.querySelector('.divUserList')); // викликаємо функцію, яка формує список з детальною інформацією користувача
 
-    document.getElementsByTagName("h1")[0].innerText = `About ${user.name}`; // Заголовок для імені користувача
+    document.querySelector("h1").innerText = `About ${user.name}`; // Заголовок для імені користувача
 
-    let buttonShowHide = document.getElementsByClassName('buttonShowHide')[0]; // Кнопка, яка показує або приховує наші пости
+    let buttonShowHide = document.querySelector('.buttonShowHide'); // Кнопка, яка показує або приховує наші пости
     buttonShowHide.innerText = `Post of current ${user.name}`;
 
     // Подія на кнопку, яка буде показувати або приховувати наші пости
     buttonShowHide.addEventListener('click', function () {
-        let divPosts = document.getElementsByClassName('divPosts')[0]; // Контейнер, де будуть міститися всі пости
+        let divPosts = document.querySelector('.divPosts'); // Контейнер, де будуть міститися всі пости
 
         // Якщо текст кнопки такий, то показуємо пости
         if (buttonShowHide.textContent === `Post of current ${user.name}`) {
 
             posts.forEach((post, index) => {
-                let divPost = document.getElementById(`post${index + 1}`), // Контейнер для кожного поста
+                let divPost = document.querySelector(`#post${index + 1}`), // Контейнер для кожного поста
                     title = document.createElement('p'), // Заголовок поста
                     buttonMore = document.createElement('button'); // Кнопка про детальну інформацію поста
 
