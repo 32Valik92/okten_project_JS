@@ -56,3 +56,20 @@ h2 {
 .divComment p:nth-child(4) {
     font-size: 80%;
 }
+
+/* Стилізація під телефон */
+@media screen and (max-width: 450px) {
+    .divInfoPost {
+        width: 80%;
+    }
+
+    .divComment {
+        width: 55%;
+        word-wrap: break-word;
+    }
+
+    h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+}

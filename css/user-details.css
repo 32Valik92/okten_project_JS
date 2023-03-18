@@ -98,3 +98,18 @@ h1 {
 .divPost:hover button {
     background-color: #D356BA;
 }
+
+/* Стилізація під телефон */
+@media screen and (max-width: 450px) {
+    ul {
+        width: 90%;
+    }
+
+    .divForButton button {
+        font-size: 18px;
+    }
+
+    .divPost {
+        width: 40%;
+    }
+}
