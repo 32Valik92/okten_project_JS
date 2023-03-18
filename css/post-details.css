@@ -58,7 +58,7 @@ h2 {
 }
 
 /* Стилізація під телефон */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 960px) {
     .divInfoPost {
         width: 80%;
     }

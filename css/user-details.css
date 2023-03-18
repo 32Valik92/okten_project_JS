@@ -100,7 +100,7 @@ h1 {
 }
 
 /* Стилізація під телефон */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 960px) {
     ul {
         width: 90%;
     }
